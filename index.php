@@ -100,6 +100,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -117,6 +118,7 @@
                 <h3>PRODUCT NAME</h3>
                 <p>Lorem Ipsum is simply dummy text of the. </p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -136,6 +138,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -155,6 +158,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -174,6 +178,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -193,6 +198,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -240,13 +246,13 @@
       </div>
       <div class="row">
         <div class="col-md-4 mb-3">
-          <img src="images/youtube_PNG16.png" alt="logo" class="img-fluid w-100 shadow" />
+          <img src="images/soda.png" alt="logo" class="img-fluid w-100 shadow" />
         </div>
         <div class="col-md-4 mb-3">
-          <img src="images/youtube_PNG16.png" alt="logo" class="img-fluid w-100 shadow" />
+          <img src="images/soyong.png" alt="logo" class="img-fluid w-100 shadow" />
         </div>
         <div class="col-md-4 mb-3">
-          <img src="images/youtube_PNG16.png" alt="logo" class="img-fluid w-100 shadow" />
+          <img src="images/swan.png" alt="logo" class="img-fluid w-100 shadow" />
         </div>
       </div>
     </div>

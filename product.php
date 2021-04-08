@@ -77,6 +77,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -94,6 +95,7 @@
                 <h4>PRODUCT NAME</h4>
                 <p>Lorem Ipsum is simply dummy text of the. </p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -113,6 +115,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -132,6 +135,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -151,6 +155,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -170,6 +175,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -189,6 +195,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>
@@ -208,6 +215,7 @@
                   dummy
                   text of the printing and typesetting industry.</p>
                 <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
               </div>
             </div>
           </a>

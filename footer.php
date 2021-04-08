@@ -3,7 +3,7 @@
       <div class="container">
         <div class="icon-social">
           <h1>
-            <a href="" target="_blank"><i class="fab fa-line"></i></a>
+            <a href="https://lin.ee/t7ZOBek" target="_blank"><i class="fab fa-line"></i></a>
             <a href="tel:0992921146"><i class="fas fa-phone-square-alt"></i></a>
           </h1>
         </div>

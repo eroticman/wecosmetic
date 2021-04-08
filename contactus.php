@@ -50,8 +50,8 @@
     <div class="row justify-content-center">
       <div class="container position-relative">
         <div class="text-box shadow">
-          <h1>เกี่ยวกับเรา</h1>
-          <h4>ABOUT US</h4>
+          <h1>ติดต่อเรา</h1>
+          <h4>CONTACT US</h4>
         </div>
       </div>
       <img src="images/header2.jpg" alt="store" class="img-fluid w-100" />
@@ -60,95 +60,6 @@
   <!-- end header section -->
 
 
-  <!-- about section -->
-  <section class="about-section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <img src="images/SO-YONG_Poster3x3m.jpg" alt="store" class="img-fluid w-100" />
-
-        </div>
-        <div class="col-md-7">
-          <div class="row">
-            <div class="col-12 mb-3">
-              <img src="images/SY-CoverFacebook.jpg" alt="store" class="img-fluid w-100" />
-            </div>
-            <div class="col-12 h-100">
-              <div class="bg-cream-full color-gold p-3 h-100">
-                <h4 class="font-weight-bold">About Us :</h4>
-                <p class="text-indent">เพราะเราเข้าใจ ความต้องการของลูกค้า และสถานการณ์ที่เกิดขึ้น ที่เราไม่สามารถควบคุมได้ ดังนั้น
-                  เราจึงมีความตั้งใจในการผลิตสินค้า ที่ดี มีคุณภาพ และราคาประหยัด ซึ่งได้ผลเป็นที่น่าพอใจ
-                  เราเลือกใช้ส่วนผสม ที่เหมาะกับทุกกลุ่ม ทุกวัย ไม่ก่อให้เกิดการแพ้ ปราศจากน้ำหอม ปราศจากสารเคมี
-                  และช่วยให้คุณสวยขึ้นทั้งตัว จนเดินไปไหน คนก็เหลียวมอง</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end about section -->
-
-
-  <!-- pdf section -->
-  <section class="pdf-section layout_padding2-bottom">
-    <div class="container">
-      <div class="sub-header">
-        <h3 class="mb-0">เกี่ยวกับผลิตภัณฑ์ของเรา</h3>
-      </div>
-      <ul class="list-group">
-        <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" data-toggle="modal" data-target=".soda">
-            <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SODA KERATIN
-              TREATMENT</h5>
-          </button>
-        </li>
-        <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" data-toggle="modal" data-target=".soyong">
-            <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SO-YONG WHITE SERUM</h5>
-          </button>
-        </li>
-        <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" data-toggle="modal" data-target=".swan">
-            <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SWAN HAIR SILKY SEAWEED NUTRIENTS</h5>
-          </button>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- end pdf section -->
-
-  <!-- Modal PDF -->
-  <div class="modal fade soda" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content h-100">
-        <div class="responsive-iframe">
-          <iframe src="pdf/SODA KERATIN TREATMENT.pdf" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade soyong" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content h-100">
-        <div class="responsive-iframe">
-          <iframe src="pdf/SO-YONG WHITE SERUM.pdf" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade swan" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content h-100">
-        <div class="responsive-iframe">
-          <iframe src="pdf/SWAN HAIR SILKY SEAWEED NUTRIENTS.pdf" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal PDF -->
 
   <?php include 'footer.php' ?>
 

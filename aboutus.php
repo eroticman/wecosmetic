@@ -98,18 +98,18 @@
       </div>
       <ul class="list-group">
         <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" data-toggle="modal" data-target=".soda">
+          <button class="btn btn-link d-block" onclick="location.href='pdf/SODA KERATIN TREATMENT.pdf'" alt="SODA KERATIN TREATMENT">
             <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SODA KERATIN
               TREATMENT</h5>
           </button>
         </li>
         <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" data-toggle="modal" data-target=".soyong">
+          <button class="btn btn-link d-block" onclick="location.href='pdf/SO-YONG WHITE SERUM.pdf'" alt="SO-YONG WHITE SERUM">
             <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SO-YONG WHITE SERUM</h5>
           </button>
         </li>
         <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" data-toggle="modal" data-target=".swan">
+          <button class="btn btn-link d-block" onclick="location.href='pdf/SWAN HAIR SILKY SEAWEED NUTRIENTS.pdf'" alt="SWAN HAIR SILKY SEAWEED NUTRIENTS">
             <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SWAN HAIR SILKY SEAWEED NUTRIENTS</h5>
           </button>
         </li>
@@ -117,38 +117,6 @@
     </div>
   </section>
   <!-- end pdf section -->
-
-  <!-- Modal PDF -->
-  <div class="modal fade soda" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content h-100">
-        <div class="responsive-iframe">
-          <iframe src="pdf/SODA KERATIN TREATMENT.pdf" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade soyong" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content h-100">
-        <div class="responsive-iframe">
-          <iframe src="pdf/SO-YONG WHITE SERUM.pdf" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade swan" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content h-100">
-        <div class="responsive-iframe">
-          <iframe src="pdf/SWAN HAIR SILKY SEAWEED NUTRIENTS.pdf" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal PDF -->
 
   <?php include 'footer.php' ?>
 
