@@ -115,9 +115,7 @@
               </div>
               <div class="content">
                 <h3>PRODUCT NAME</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
+                <p>Lorem Ipsum is simply dummy text of the. </p>
                 <h6>ANTI-ACNE SOLUTION</h6>
               </div>
             </div>
@@ -258,11 +256,6 @@
 
 
   <?php include 'footer.php' ?>
-
-  </section>
-
-  <!-- end info section -->
-
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
