@@ -322,6 +322,20 @@ a:hover {
   transition: 0.5s;
 }
 
+.map.nav-tabs .nav-link {
+  color: #000;
+  
+}
+
+.map.nav-tabs .nav-link.active {
+  color: #cba359;
+}
+
+.map.nav-tabs .nav-link:hover {
+  color: #cba359 !important;
+  transition: 0.5s;
+}
+
 @media(min-width : 2000px) {
   .header-section img {
     max-height: 190px;

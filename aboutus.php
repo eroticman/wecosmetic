@@ -66,7 +66,6 @@
       <div class="row">
         <div class="col-md-5">
           <img src="images/SO-YONG_Poster3x3m.jpg" alt="store" class="img-fluid w-100" />
-
         </div>
         <div class="col-md-7">
           <div class="row">
