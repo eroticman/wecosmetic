@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="icon" type="image/png" href="images/logo.png" />
 
-  <title>หน้าแรก | We-Cosmetic</title>
+  <title>เกี่ยวกับเรา | We-Cosmetic</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
