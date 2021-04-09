@@ -1,19 +1,19 @@
     <?php  $current = basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']); ?>
     <!-- header section strats -->
     <header class="header_section">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-lg-3">
             <a class="navbar-brand" href="index">
-                <img src="images/logo.png" alt="" />
+                <img src="images/logo.png" alt="logo" class="logo" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="bg-cream w-100 text-center mx-auto py-1">
-                <div class="collapse navbar-collapse d-md-inline-block"
+            <div class="bg-cream w-100 text-center mx-auto py-lg-1">
+                <div class="collapse navbar-collapse d-lg-inline-block"
                     id="navbarSupportedContent">
-                    <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-                        <ul class="navbar-nav  ">
+                    <div class="d-flex ml-auto flex-column flex-lg-row align-items-center bg-cream-sm">
+                        <ul class="navbar-nav">
                             <li class="nav-item <?php echo($current == 'index') ? 'active' : '' ?>">
                                 <a class="nav-link" href="index">หน้าแรก</a>
                             </li>

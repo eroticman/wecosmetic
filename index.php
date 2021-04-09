@@ -46,7 +46,7 @@
     <!-- slider section -->
     <section class="">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators mb-md-auto mb-0">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -211,11 +211,11 @@
 
   <!-- store section -->
 
-  <section class="bg-cream">
+  <section class="bg-cream w-100">
     <div class="row">
       <div class="col-md-6 my-auto color-gold px-md-5 px-2 layout_padding2">
         <div class="row justify-content-center">
-          <div class="col-md-10">
+          <div class="col-lg-10 col-sm-12 col-10">
             <h2 class="font-weight-bold">Store :</h2>
             <h5>- Beauty Today สาขา เมืองทอง</h5>
             <h5>- Beauty Today สาขา เครือสหพัฒน์</h5>
@@ -228,7 +228,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <img src="images/store.jpg" alt="store" class="img-fluid w-100" />
+        <img src="images/store.jpg" alt="store" class="img-fluid w-100 height-fit-sm" />
       </div>
     </div>
   </section>

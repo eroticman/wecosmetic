@@ -64,10 +64,10 @@
   <section class="about-section layout_padding2">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-12 mb-3">
           <img src="images/SO-YONG_Poster3x3m.jpg" alt="store" class="img-fluid w-100" />
         </div>
-        <div class="col-md-7">
+        <div class="col-lg-7 col-md-12 mb-3">
           <div class="row">
             <div class="col-12 mb-3">
               <img src="images/SY-CoverFacebook.jpg" alt="store" class="img-fluid w-100" />
@@ -97,18 +97,18 @@
       </div>
       <ul class="list-group">
         <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" onclick="location.href='pdf/SODA KERATIN TREATMENT.pdf'" alt="SODA KERATIN TREATMENT">
+          <button class="btn btn-link d-block text-left" onclick="location.href='pdf/SODA KERATIN TREATMENT.pdf'" alt="SODA KERATIN TREATMENT">
             <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SODA KERATIN
               TREATMENT</h5>
           </button>
         </li>
         <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" onclick="location.href='pdf/SO-YONG WHITE SERUM.pdf'" alt="SO-YONG WHITE SERUM">
+          <button class="btn btn-link d-block text-left" onclick="location.href='pdf/SO-YONG WHITE SERUM.pdf'" alt="SO-YONG WHITE SERUM">
             <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SO-YONG WHITE SERUM</h5>
           </button>
         </li>
         <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" onclick="location.href='pdf/SWAN HAIR SILKY SEAWEED NUTRIENTS.pdf'" alt="SWAN HAIR SILKY SEAWEED NUTRIENTS">
+          <button class="btn btn-link d-block text-left" onclick="location.href='pdf/SWAN HAIR SILKY SEAWEED NUTRIENTS.pdf'" alt="SWAN HAIR SILKY SEAWEED NUTRIENTS">
             <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SWAN HAIR SILKY SEAWEED NUTRIENTS</h5>
           </button>
         </li>

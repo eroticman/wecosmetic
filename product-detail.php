@@ -67,7 +67,7 @@
   <section class="product-detail-section layout_padding2">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6 mb-lg-3 mb-md-5">
           <div id="product-viewer--main" class="product-viewer shadow">
             <table class="table table-borderless">
               <tbody>
@@ -123,7 +123,7 @@
             </button>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6 mb-3">
           <div class="product-detail">
             <h4 class="color-gold">PRODUCT NAME</h4>
             <h5>ANTI-ACNE SOLUTION</h5>
