@@ -54,6 +54,23 @@ body {
   background-color: #ffffff;
 }
 
+.text-box-contact {
+  position: absolute;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.text-box-contact ,h4 ,a {
+  color: #cba359;
+}
+
+.text-box-contact a:hover {
+  color: #614510 !important;
+}
+
 .text-dark {
   color: #000;
 }
@@ -125,6 +142,11 @@ a:hover {
 }
 
 .sub-header h3 {
+  color: #cba359;
+  font-family: 'sukhumvit_setbold';
+}
+
+.sub-header h4 {
   color: #cba359;
   font-family: 'sukhumvit_setbold';
 }
@@ -251,6 +273,10 @@ a:hover {
   text-align: center;
 }
 
+.card-product h4 {
+  font-family: 'sukhumvit_setbold';
+  color: #cba359;
+}
 
 /* /////////////////product page////////////////// */
 
@@ -324,7 +350,7 @@ a:hover {
 
 .map.nav-tabs .nav-link {
   color: #000;
-  
+
 }
 
 .map.nav-tabs .nav-link.active {

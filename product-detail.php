@@ -38,6 +38,9 @@
   <!-- Fontawesome -->
   <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" />
 
+  <!-- responsive style -->
+  <link href="css/imageviewer.css" rel="stylesheet" />
+
 </head>
 
 <body class="overflow-x">
@@ -50,8 +53,8 @@
     <div class="row justify-content-center">
       <div class="container position-relative">
         <div class="text-box shadow">
-          <h1>เกี่ยวกับเรา</h1>
-          <h4>ABOUT US</h4>
+          <h1>รายละเอียดสินค้า</h1>
+          <h4>PRODUCT DETAIL</h4>
         </div>
       </div>
       <img src="images/header2.jpg" alt="store" class="img-fluid w-100" />
@@ -60,95 +63,184 @@
   <!-- end header section -->
 
 
-  <!-- about section -->
-  <section class="about-section layout_padding2">
+  <!-- product-detail section -->
+  <section class="product-detail-section layout_padding2">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
-          <img src="images/SO-YONG_Poster3x3m.jpg" alt="store" class="img-fluid w-100" />
+        <div class="col-md-6">
+          <div id="product-viewer--main" class="product-viewer shadow">
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="thumbnail-gallery">
+                      <div class="thumbnail-container">
+                        <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
+                      </div>
+                      <div class="thumbnail-container">
+                        <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
+                      </div>
+                      <div class="thumbnail-container">
+                        <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
+                      </div>
+                      <div class="thumbnail-container">
+                        <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
+                      </div>
+                      <div class="thumbnail-container">
+                        <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
+                      </div>
+                      <div class="thumbnail-container">
+                        <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
+                      </div>
+                      <div class="thumbnail-container">
+                        <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
+                      </div>
+                      <div class="thumbnail-container">
+                        <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
+                      </div>
+                      <div class="thumbnail-container">
+                        <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-img-container py-2">
+                      <img name="product-img" class="img-thumbnail">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
+          <div id="paginator--main" class="paginator">
+            <button class="button" name="left-button" disabled>
+              <i class="fas fa-angle-left"></i>
+            </button>
+            <div class="badge"></div>
+            <button class="button" name="right-button">
+              <i class="fas fa-angle-right"></i>
+            </button>
+          </div>
         </div>
-        <div class="col-md-7">
-          <div class="row">
-            <div class="col-12 mb-3">
-              <img src="images/SY-CoverFacebook.jpg" alt="store" class="img-fluid w-100" />
-            </div>
-            <div class="col-12 h-100">
-              <div class="bg-cream-full color-gold p-3 h-100">
-                <h4 class="font-weight-bold">About Us :</h4>
-                <p class="text-indent">เพราะเราเข้าใจ ความต้องการของลูกค้า และสถานการณ์ที่เกิดขึ้น ที่เราไม่สามารถควบคุมได้ ดังนั้น
-                  เราจึงมีความตั้งใจในการผลิตสินค้า ที่ดี มีคุณภาพ และราคาประหยัด ซึ่งได้ผลเป็นที่น่าพอใจ
-                  เราเลือกใช้ส่วนผสม ที่เหมาะกับทุกกลุ่ม ทุกวัย ไม่ก่อให้เกิดการแพ้ ปราศจากน้ำหอม ปราศจากสารเคมี
-                  และช่วยให้คุณสวยขึ้นทั้งตัว จนเดินไปไหน คนก็เหลียวมอง</p>
-              </div>
+        <div class="col-md-6">
+          <div class="product-detail">
+            <h4 class="color-gold">PRODUCT NAME</h4>
+            <h5>ANTI-ACNE SOLUTION</h5>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              <br>Lorem Ipsum is simply dummytext of the printing and typesetting industry.
+              <br>Lorem Ipsum is simply dummy text of the printing andtypesetting industry.
+              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <div class="btn-group border d-flex">
+              <button type="button" class="btn btn-light disabled">
+                <h5 class="mb-0 text-dark">ราคา <span class="text-danger">189</span> บาท</h5>
+              </button>
+              <button type="button" onclick="window.open('https://lin.ee/t7ZOBek')"  class="btn btn-gold"><i class="fas fa-shopping-basket"></i> :
+                สั่งซื้อสินค้า</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- end about section -->
+  <!-- end product-detail section -->
 
 
-  <!-- pdf section -->
-  <section class="pdf-section layout_padding2-bottom">
+  <!-- related section -->
+  <section class="related-section layout_padding2-bottom layout_padding2-top">
     <div class="container">
       <div class="sub-header">
-        <h3 class="mb-0">เกี่ยวกับผลิตภัณฑ์ของเรา</h3>
+        <h4 class="mb-0">สินค้าอื่นๆ</h4>
       </div>
-      <ul class="list-group">
-        <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" data-toggle="modal" data-target=".soda">
-            <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SODA KERATIN
-              TREATMENT</h5>
-          </button>
-        </li>
-        <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" data-toggle="modal" data-target=".soyong">
-            <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SO-YONG WHITE SERUM</h5>
-          </button>
-        </li>
-        <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block" data-toggle="modal" data-target=".swan">
-            <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SWAN HAIR SILKY SEAWEED NUTRIENTS</h5>
-          </button>
-        </li>
-      </ul>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-3">
+          <a href="product-detail">
+            <div class="card-product">
+              <div class="square">
+                <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
+                <div class="overlay">
+                  <div class="text h5">รายละเอียด</div>
+                </div>
+              </div>
+              <div class="content">
+                <h4>PRODUCT NAME</h4>
+                <p>Lorem Ipsum is simply dummy text of the. </p>
+                <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <a href="product-detail">
+            <div class="card-product">
+              <div class="square">
+                <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
+                <div class="overlay">
+                  <div class="text h5">รายละเอียด</div>
+                </div>
+              </div>
+              <div class="content">
+                <h4>PRODUCT NAME</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                  dummy
+                  text of the printing and typesetting industry.</p>
+                <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <a href="product-detail">
+            <div class="card-product">
+              <div class="square">
+                <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
+                <div class="overlay">
+                  <div class="text h5">รายละเอียด</div>
+                </div>
+              </div>
+              <div class="content">
+                <h4>PRODUCT NAME</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                  dummy
+                  text of the printing and typesetting industry.</p>
+                <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <a href="product-detail">
+            <div class="card-product">
+              <div class="square">
+                <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
+                <div class="overlay">
+                  <div class="text h5">รายละเอียด</div>
+                </div>
+              </div>
+              <div class="content">
+                <h4>PRODUCT NAME</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
+                  dummy
+                  text of the printing and typesetting industry.</p>
+                <h6>ANTI-ACNE SOLUTION</h6>
+                <h6 class="color-gold font-weight-bold">189 บาท</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- end pdf section -->
-
-  <!-- Modal PDF -->
-  <div class="modal fade soda" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content h-100">
-        <div class="responsive-iframe">
-          <iframe src="pdf/SODA KERATIN TREATMENT.pdf" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade soyong" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content h-100">
-        <div class="responsive-iframe">
-          <iframe src="pdf/SO-YONG WHITE SERUM.pdf" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade swan" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content h-100">
-        <div class="responsive-iframe">
-          <iframe src="pdf/SWAN HAIR SILKY SEAWEED NUTRIENTS.pdf" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal PDF -->
+  <!-- end related section -->
 
   <?php include 'footer.php' ?>
 
@@ -157,7 +249,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <script type="text/javascript" src="js/custom.js"></script>
-
+  <script type="text/javascript" src="js/imageviewerscript.js"></script>
 </body>
 
 </html>

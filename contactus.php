@@ -102,7 +102,11 @@
             </form>
           </div>
         </div>
-        <div class="col-md-6 mb-3">
+        <div class="col-md-6 mb-3 position-relative">
+          <div class="text-box-contact p-md-5 p-3">
+            <h5><i class="fab fa-line"></i> : <a href="https://lin.ee/t7ZOBek" target="_blank">@we.cosmetic</a></h5>
+            <h5><i class="fas fa-phone-square-alt"></i> : <a href="tel:0992921146">099-292-1146</a></h5>
+          </div>
           <img src="images/contact.jpg" alt="store" class="img-fluid w-100" />
         </div>
       </div>
