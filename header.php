@@ -1,7 +1,7 @@
     <?php  $current = basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']); ?>
     <!-- header section strats -->
     <header class="header_section">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-lg-3">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index">
                 <img src="images/logo.png" alt="logo" class="logo" />
             </a>
