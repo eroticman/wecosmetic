@@ -103,34 +103,28 @@
           </div>
         </div>
         <div class="col-lg-6 mb-3 position-relative">
-          <div class="text-box-contact p-md-5 p-3">
-            <table class="table table-borderless">
-              <tbody>
-                <tr>
-                  <td class="pb-0"><i class="fas fa-home h3 color-gold"></i></td>
-                  <td class="pb-0">
-                    <h5 class="color-gold">- Beauty Today สาขา เมืองทอง</h5>
-                    <h5 class="color-gold">- Beauty Today สาขา เครือสหพัฒน์</h5>
-                    <h5 class="color-gold">- Beauty Today สาขา ปลวกแดง</h5>
-                    <h5 class="color-gold">- Beauty Today สาขา สะพานสี่</h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="pb-0"><i class="fab fa-line h3 color-gold"></i></td>
-                  <td class="pb-0">
-                    <h5 class="color-gold"><a href="https://lin.ee/t7ZOBek" target="_blank">@we.cosmetic</a></h5>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="pb-0"><i class="fas fa-phone-square-alt h3 color-gold"></i></td>
-                  <td class="pb-0">
-                    <h5 class="color-gold"><a href="tel:0992921146">099-292-1146</a></h5>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="p-md-3 color-gold">
+            <div class="card shadow p-2 px-3 border-0 mb-3">
+              <h5 class="color-gold">Beauty Today สาขา เมืองทอง1</h5>
+              <h6>โทร : <a href="tel:0969454440">096-945-4440</a></h6>
+            </div>
+            <div class="card shadow p-2 px-3 border-0 mb-3">
+              <h5 class="color-gold">Beauty Today สาขา เมืองทอง2</h5>
+              <h6>โทร : <a href="tel:0909087966">090-908-7966</a></h6>
+            </div>
+            <div class="card shadow p-2 px-3 border-0 mb-3">
+              <h5 class="color-gold">Beauty Today สาขา ปลวกแดง</h5>
+              <h6>โทร : <a href="tel:0909087434​">090-908-7434​</a></h6>
+            </div>
+            <div class="card shadow p-2 px-3 border-0 mb-3">
+              <h5 class="color-gold">Beauty Today สาขา สะพานสี่</h5>
+              <h6>โทร : <a href="tel:0634239139">063-423-9139</a></h6>
+            </div>
+            <div class="card shadow p-2 px-3 border-0 mb-3">
+              <h5 class="color-gold">Beauty Today สาขา เครือสหพัฒน์</h5>
+              <h6>โทร : <a href="tel:033031702">03-303-1702</a></h6>
+            </div>
           </div>
-          <img src="images/contact.jpg" alt="store" class="img-fluid w-100" />
         </div>
       </div>
       <div class="row">
@@ -138,32 +132,39 @@
           <nav class="mb-2">
             <div class="nav nav-tabs map" id="nav-tab" role="tablist">
               <a class="nav-item nav-link active" data-toggle="tab" href="#muangthong" aria-selected="true">สาขา
-                เมืองทอง</a>
-              <a class="nav-item nav-link" data-toggle="tab" href="#kruesahapat" aria-selected="false">สาขา
-                เครือสหพัฒน์</a>
+                เมืองทอง1</a>
+              <a class="nav-item nav-link" data-toggle="tab" href="#muangthong2" aria-selected="true">สาขา
+                เมืองทอง2</a>
               <a class="nav-item nav-link" data-toggle="tab" href="#pruakdang" aria-selected="false">สาขา ปลวกแดง</a>
               <a class="nav-item nav-link" data-toggle="tab" href="#sapansie" aria-selected="false">สาขา สะพานสี่</a>
+              <a class="nav-item nav-link" data-toggle="tab" href="#kruesahapat" aria-selected="false">สาขา
+                เครือสหพัฒน์</a>
             </div>
           </nav>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="muangthong">
               <iframe class="rounded shadow iframe-responsive"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15490.945674055909!2d100.53837172661787!3d13.914696937768934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e283bb4336f491%3A0x3af4858e639bb095!2zQmVhdXR5dG9kYXnguYDguKHguLfguK3guIfguJfguK3guIfguJjguLLguJnguLU!5e0!3m2!1sth!2sth!4v1617899248447!5m2!1sth!2sth"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.785862633395!2d100.5506583148323!3d13.91174399024413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU0JzQyLjMiTiAxMDDCsDMzJzEwLjMiRQ!5e0!3m2!1sen!2sth!4v1618027189389!5m2!1sen!2sth"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="tab-pane fade" id="kruesahapat">
+            <div class="tab-pane fade" id="muangthong2">
               <iframe class="rounded shadow iframe-responsive"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15543.867225116217!2d100.9599031!3d13.1012894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5d27e8d18c92f5a!2z4Lij4LmJ4Liy4LiZ4Lia4Li04Lin4LiV4Li14LmJ4LiX4Li54LmA4LiU4Lii4LmM!5e0!3m2!1sth!2sth!4v1617899333476!5m2!1sth!2sth"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.8129165636374!2d100.55231831483225!3d13.910127990245183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU0JzM2LjUiTiAxMDDCsDMzJzE2LjIiRQ!5e0!3m2!1sen!2sth!4v1618027137281!5m2!1sen!2sth"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </div>
+
             <div class="tab-pane fade" id="pruakdang">
-              <iframe class="rounded shadow iframe-responsive"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15551.504780191575!2d101.2119811!3d12.9797695!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x696ea189d0f0a8d6!2z4Lia4Li04Lin4LiV4Li14LmJ4LiX4Li54LmA4LiU4Lii4LmMIOC4m-C4peC4p-C4geC5geC4lOC4hw!5e0!3m2!1sth!2sth!4v1617899369822!5m2!1sth!2sth"
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.876077886365!2d101.20976531482212!3d12.979776990850498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzQ3LjIiTiAxMDHCsDEyJzQzLjAiRQ!5e0!3m2!1sen!2sth!4v1618027050248!5m2!1sen!2sth"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="tab-pane fade" id="sapansie"><iframe class="rounded shadow iframe-responsive"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61997.45352400605!2d100.5821411783396!3d13.788466117964491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e7bcea58add%3A0xb5718c1ff82843ea!2z4Lia4Li04Lin4LiV4Li14LmJ4LiX4Li54LmA4LiU4Lii4LmM!5e0!3m2!1sth!2sth!4v1617899457276!5m2!1sth!2sth"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4457794199407!2d101.12497931482237!3d13.007259990832475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzI2LjEiTiAxMDHCsDA3JzM3LjgiRQ!5e0!3m2!1sen!2sth!4v1618027279068!5m2!1sen!2sth"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            <div class="tab-pane fade" id="kruesahapat">
+              <iframe class="rounded shadow iframe-responsive"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.9655184059366!2d100.9576263148233!3d13.101370990770805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA2JzA0LjkiTiAxMDDCsDU3JzM1LjMiRQ!5e0!3m2!1sen!2sth!4v1618027317653!5m2!1sen!2sth"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
           </div>
         </div>
       </div>

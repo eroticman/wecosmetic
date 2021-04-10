@@ -217,10 +217,11 @@
         <div class="row justify-content-center">
           <div class="col-lg-10 col-sm-12 col-10">
             <h2 class="font-weight-bold">Store :</h2>
-            <h5>- Beauty Today สาขา เมืองทอง</h5>
-            <h5>- Beauty Today สาขา เครือสหพัฒน์</h5>
+            <h5>- Beauty Today สาขา เมืองทอง1</h5>
+            <h5>- Beauty Today สาขา เมืองทอง2</h5>
             <h5>- Beauty Today สาขา ปลวกแดง</h5>
             <h5>- Beauty Today สาขา สะพานสี่</h5>
+            <h5>- Beauty Today สาขา เครือสหพัฒน์</h5>
             <a href="contactus" class="btn btn-gold rounded-0 h3 my-3">
               <h4 class="mb-0">Contact Us</h4>
             </a>
