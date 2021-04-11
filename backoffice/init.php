@@ -354,8 +354,45 @@ function product_add() {
 
 					$i++;
 				}
-				// print_r($sql);
-				// exit();
+			}
+		}
+
+		if (!empty($_FILES['reviewImg'])) {
+			include('vendor/upload/class.fileuploaderReview.php');
+
+			$filePath 	= '../img/review/' . $product_id . '/';
+			$path 		= realpath($filePath);
+
+			if ( !is_dir($path) ) {
+				mkdir($filePath);
+			}
+
+			// initialize FileUploader
+		    $FileUploaderReview = new FileUploaderReview('reviewImg', array(
+		        'uploadDir' => $filePath,
+		        'title' 	=> 'name'
+		    ));
+
+		    // call to upload the files
+    		$data = $FileUploaderReview->upload();
+
+    		// if uploaded and success
+		    if($data['isSuccess'] && count($data['files']) > 0) {
+		        // get uploaded files
+		        $uploadedFiles = $data['files'];
+		    }
+
+		    // get the fileList
+			$fileList = $FileUploaderReview->getFileList();			
+
+			if ( !empty($fileList) ) {
+				$i = 1;
+				foreach ($fileList as $img) {
+					$sql = "INSERT INTO db_product_review (product_id, img_name, order_id, created) VALUE ('{$product_id}', '{$img['name']}', '{$i}', '{$created}')";
+					query($sql);
+
+					$i++;
+				}
 			}
 		}
 	}

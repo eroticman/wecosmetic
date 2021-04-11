@@ -31,9 +31,6 @@
 	<link href="vendor/upload/css/jquery.fileuploader.css" media="all" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/dropify/dropify.css">
 
-	<!-- Datepicker -->
-	<link rel="stylesheet" href="plugins/datepicker/bootstrap-datepicker.css">
-
 	<!-- Fonts -->
 	<link rel="stylesheet" href="assets/fonts/web-icons/web-icons.min.css">
 	<link rel="stylesheet" href="assets/fonts/font-awesome/font-awesome.min.css">
@@ -60,6 +57,7 @@
 	<?php include 'header.php'; ?>
 	<?php 
     include('included_img_product.php');
+    include('included_review_product.php');
 
 	if(!empty($_POST))
 	{	
@@ -136,7 +134,14 @@
 										$input = $FileUploader->generateInput();
 										echo $input;
 									?>
-									<!-- <i class="help-block"><i>Image size: 1774x1774px</i></p> -->
+				                </div>
+				                <div class="form-group form-material-file" data-plugin="formMaterial">
+				                  	<label class="form-control-label" for="image">รีวิว</label>
+				                  	<?php
+										// this variable is comming from the included file		
+										$inputReview = $FileUploaderReview->generateInput();
+										echo $inputReview;
+									?>
 				                </div>
 				                <div class="text-right">
 				                	<input type="hidden" name="product_id" value="<?php echo $product_detail->id; ?>">
@@ -193,18 +198,6 @@
 		CKEDITOR.replace( 'editor', {
 
 		} );
-
-        CKEDITOR.replace( 'guarantee', {
-
-        } );
-
-        CKEDITOR.replace( 'offer', {
-
-        } );
-
-        CKEDITOR.replace( 'finance', {
-
-        } );
         
 	</script> 
 
@@ -236,19 +229,6 @@
 	<script src="vendor/upload/js/jquery.fileuploader.js" type="text/javascript"></script>
 	<script src="vendor/upload/js/custom.js" type="text/javascript"></script>
 	<script src="vendor/dropify/dropify.min.js"></script>    
-	
-	<!-- Datepicker -->
-    <script type="text/javascript" src="plugins/datepicker/bootstrap-datepicker.js"></script>
-
-    <script>
-
-      $(document).ready(function() {
-          $('.datepicker').datepicker({
-              format: 'yyyy/mm/dd'
-          });
-      });
-
-    </script>
 
 </body>
 </html>
