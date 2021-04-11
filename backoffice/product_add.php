@@ -123,6 +123,11 @@
 				                  	<input type="file" id="pdImg" name="pdImg">
 									<p><i class="help-block"><i>Image size: 1200x800px</i></p>
 				                </div>
+				                <div class="form-group form-material-file" data-plugin="formMaterial">
+				                  	<label class="form-control-label" for="images">รีวิว</label>
+				                  	<input type="file" id="reviewImg" name="reviewImg">
+									<p><i class="help-block"><i>Image size: 1200x800px</i></p>
+				                </div>
 				                <div class="text-right">
 						            <button type="submit" class="btn btn-animate btn-animate-side btn-success">
 						              	<span><i class="icon wb-check" aria-hidden="true"></i> บันทึก</span>

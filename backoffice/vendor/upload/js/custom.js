@@ -6,7 +6,7 @@ $(document).ready(function() {
 	});
 
 	// enable fileuploader plugin
-	$('input[name="cusImg"]').fileuploader({
+	$('input[name="reviewImg"]').fileuploader({
 		// limit:1
 	});
 	
