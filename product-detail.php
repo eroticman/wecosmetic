@@ -40,7 +40,6 @@
 
   <!-- responsive style -->
   <link href="css/imageviewer.css" rel="stylesheet" />
-
 </head>
 
 <body class="overflow-x">
@@ -141,8 +140,41 @@
               <button type="button" class="btn btn-light disabled">
                 <h5 class="mb-0 text-dark">ราคา <span class="text-danger">189</span> บาท</h5>
               </button>
-              <button type="button" onclick="window.open('https://lin.ee/t7ZOBek')"  class="btn btn-gold"><i class="fas fa-shopping-basket"></i> :
+              <button type="button" onclick="window.open('https://lin.ee/t7ZOBek')" class="btn btn-gold"><i
+                  class="fas fa-shopping-basket"></i> :
                 สั่งซื้อสินค้า</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-md-5 mt-3">
+          <div class="sub-header">
+            <h4 class="mb-0">รัวิวจากลูกค้า</h4>
+          </div>
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="square">
+                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="square">
+                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="square">
+                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="square">
+                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
+              </div>
+            </div>
+            <div class="item">
+              <div class="square">
+                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
+              </div>
             </div>
           </div>
         </div>
