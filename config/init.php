@@ -52,6 +52,17 @@ function banner_list()
 	return query($sql);
 }
 
+function best_index()
+{
+	$sql = "SELECT *
+			FROM db_product
+            WHERE is_best = '1'  AND is_active = '1'
+            ORDER BY id DESC
+            LIMIT 6";
+
+	return query($sql);
+}
+
 function product_list()
 {
 	$page	= (!empty($_GET['page'])) ? $_GET['page'] : 1;
@@ -61,7 +72,7 @@ function product_list()
 	$sql = "SELECT *
 			FROM db_product
             WHERE is_active = '1'
-            ORDER BY id DESC
+            ORDER BY is_best DESC, id DESC
             LIMIT {$start}, {$limit}";
 
 	return query($sql);
@@ -115,23 +126,31 @@ function product_img_list()
 	return $result;
 }
 
+function product_review_list()
+{
+	if (!empty($_GET['id'])) {
+		$wheres[] = "product_id = '{$_GET['id']}'";
+	}
+	
+	$where	= (!empty($wheres)) ? 'WHERE ' . implode('AND ', $wheres) : null;
+
+	$sql	= "SELECT *
+				FROM db_product_review
+				{$where}
+				ORDER BY order_id ASC";
+	
+	$result = query($sql);
+
+	return $result;
+}
+
 function product_related()
 {
 	$sql = "SELECT *
 			FROM db_product
 			WHERE is_active = '1'
 			ORDER BY RAND()
-			LIMIT 6";
-
-	return query($sql);
-}
-
-function about_us_text()
-{
-	$sql = "SELECT *
-			FROM db_about_us
-			WHERE is_active = '1'
-			LIMIT 1";
+			LIMIT 4";
 
 	return query($sql);
 }

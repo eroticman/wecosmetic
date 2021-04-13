@@ -92,30 +92,28 @@
                         <div class="panel-body container-fluid">
 			              	<form id="serviceAdd" name="serviceAdd" class="form-horizontal" method="post" enctype="multipart/form-data">
 				                <div class="form-group" data-plugin="formMaterial">
-				                  	<label class="form-control-label" for="title">ชื่อ</label>
-				                  	<input type="text" class="form-control" id="name" name="name" value="<?php echo $contact_us_detail->contact_name; ?>" required>
-				                </div>
-				                <div class="form-group" data-plugin="formMaterial">
 				                  	<label class="form-control-label" for="phone_1">Beauty Today สาขา เมืองทอง1</label>
 				                  	<input type="text" class="form-control" id="phone_1" name="phone_1" value="<?php echo $contact_us_detail->phone_1; ?>">
+				                  	<label class="form-control-label" for="googlemap_1">Google Map สาขา เมืองทอง 1</label>
+				                  	<input type="text" class="form-control" id="google_map_1" name="google_map_1" value="<?php echo $contact_us_detail->google_map_1; ?>"> 
+										<br>
 				                  	<label class="form-control-label" for="phone_2">Beauty Today สาขา เมืองทอง2</label>
 				                  	<input type="text" class="form-control" id="phone_2" name="phone_2" value="<?php echo $contact_us_detail->phone_2; ?>">
+				                  	<label class="form-control-label" for="googlemap_1">Google Map สาขา เมืองทอง 2</label>
+				                  	<input type="text" class="form-control" id="google_map_2" name="google_map_2" value="<?php echo $contact_us_detail->google_map_2; ?>"> 
+										<br>
 				                  	<label class="form-control-label" for="phone_3">Beauty Today สาขา ปลวกแดง</label>
 				                  	<input type="text" class="form-control" id="phone_3" name="phone_3" value="<?php echo $contact_us_detail->phone_3; ?>">
+				                  	<label class="form-control-label" for="googlemap_1">Google Map สาขา ปลวกแดง</label>
+				                  	<input type="text" class="form-control" id="google_map_3" name="google_map_3" value="<?php echo $contact_us_detail->google_map_3; ?>"> 
+										<br>
 				                  	<label class="form-control-label" for="phone_4">Beauty Today สาขา สะพานสี่</label>
 				                  	<input type="text" class="form-control" id="phone_4" name="phone_4" value="<?php echo $contact_us_detail->phone_4; ?>">
-				                  	<label class="form-control-label" for="phone_5">Beauty Today สาขา เครือสหพัฒน์</label>
-				                  	<input type="text" class="form-control" id="phone_5" name="phone_5" value="<?php echo $contact_us_detail->phone_5; ?>">
-				                </div>
-				                <div class="form-group" data-plugin="formMaterial">
-				                  	<label class="form-control-label" for="googlemap_1">Google Map สาขา เมืองทอง 1</label>
-				                  	<input type="text" class="form-control" id="google_map_1" name="google_map_1" value="<?php echo $contact_us_detail->google_map_1; ?>">
-				                  	<label class="form-control-label" for="googlemap_1">Google Map สาขา เมืองทอง 2</label>
-				                  	<input type="text" class="form-control" id="google_map_2" name="google_map_2" value="<?php echo $contact_us_detail->google_map_2; ?>">
-				                  	<label class="form-control-label" for="googlemap_1">Google Map สาขา ปลวกแดง</label>
-				                  	<input type="text" class="form-control" id="google_map_3" name="google_map_3" value="<?php echo $contact_us_detail->google_map_3; ?>">
 				                  	<label class="form-control-label" for="googlemap_1">Google Map สาขา สะพานสี่</label>
 				                  	<input type="text" class="form-control" id="google_map_4" name="google_map_4" value="<?php echo $contact_us_detail->google_map_4; ?>">
+										<br>
+				                  	<label class="form-control-label" for="phone_5">Beauty Today สาขา เครือสหพัฒน์</label>
+				                  	<input type="text" class="form-control" id="phone_5" name="phone_5" value="<?php echo $contact_us_detail->phone_5; ?>">
 				                  	<label class="form-control-label" for="googlemap_1">Google Map สาขา เครือสหพัฒน์</label>
 				                  	<input type="text" class="form-control" id="google_map_5" name="google_map_5" value="<?php echo $contact_us_detail->google_map_5; ?>">
 				                </div>

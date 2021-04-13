@@ -42,7 +42,11 @@
 
 <body class="overflow-x">
   <div class="hero_area">
-    <?php include 'header.php' ?>
+    <?php 
+      include 'header.php';
+      include 'config/init.php'; 
+      $contactList = contact_list();
+    ?>
   </div>
 
   <!-- header section -->
@@ -73,27 +77,27 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="ชื่อ - นามสกุล">
+                    <input type="email" class="form-control" id="fullname" placeholder="ชื่อ - นามสกุล">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="เบอร์โทรศัพท์">
+                    <input type="email" class="form-control" id="phone" placeholder="เบอร์โทรศัพท์">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="ไลน์ไอดี">
+                    <input type="email" class="form-control" id="lineID" placeholder="ไลน์ไอดี">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" placeholder="เรื่องที่ติดต่อ">
+                    <input type="email" class="form-control" id="subject" placeholder="เรื่องที่ติดต่อ">
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <textarea class="form-control" rows="5" placeholder="รายละเอียด"></textarea>
+                    <textarea class="form-control" rows="5" id="message" placeholder="รายละเอียด"></textarea>
                   </div>
                 </div>
               </div>
@@ -106,23 +110,23 @@
           <div class="p-md-3 color-gold">
             <div class="card shadow p-2 px-3 border-0 mb-3">
               <h5 class="color-gold">Beauty Today สาขา เมืองทอง1</h5>
-              <h6>โทร : <a href="tel:0969454440">096-945-4440</a></h6>
+              <h6>โทร : <a href="tel:<?php echo $contactList[0]->phone_1; ?>"><?php echo $contactList[0]->phone_1; ?></a></h6>
             </div>
             <div class="card shadow p-2 px-3 border-0 mb-3">
               <h5 class="color-gold">Beauty Today สาขา เมืองทอง2</h5>
-              <h6>โทร : <a href="tel:0909087966">090-908-7966</a></h6>
+              <h6>โทร : <a href="tel:<?php echo $contactList[0]->phone_2; ?>"><?php echo $contactList[0]->phone_2; ?></a></h6>
             </div>
             <div class="card shadow p-2 px-3 border-0 mb-3">
               <h5 class="color-gold">Beauty Today สาขา ปลวกแดง</h5>
-              <h6>โทร : <a href="tel:0909087434​">090-908-7434​</a></h6>
+              <h6>โทร : <a href="tel:<?php echo $contactList[0]->phone_3; ?>"><?php echo $contactList[0]->phone_3; ?>​</a></h6>
             </div>
             <div class="card shadow p-2 px-3 border-0 mb-3">
               <h5 class="color-gold">Beauty Today สาขา สะพานสี่</h5>
-              <h6>โทร : <a href="tel:0634239139">063-423-9139</a></h6>
+              <h6>โทร : <a href="tel:<?php echo $contactList[0]->phone_4; ?>"><?php echo $contactList[0]->phone_4; ?></a></h6>
             </div>
             <div class="card shadow p-2 px-3 border-0 mb-3">
               <h5 class="color-gold">Beauty Today สาขา เครือสหพัฒน์</h5>
-              <h6>โทร : <a href="tel:033031702">03-303-1702</a></h6>
+              <h6>โทร : <a href="tel:<?php echo $contactList[0]->phone_5; ?>"><?php echo $contactList[0]->phone_5; ?></a></h6>
             </div>
           </div>
         </div>
@@ -144,25 +148,25 @@
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="muangthong">
               <iframe class="rounded shadow iframe-responsive"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.785862633395!2d100.5506583148323!3d13.91174399024413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU0JzQyLjMiTiAxMDDCsDMzJzEwLjMiRQ!5e0!3m2!1sen!2sth!4v1618027189389!5m2!1sen!2sth"
+                src="<?php echo $contactList[0]->google_map_1; ?>"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="tab-pane fade" id="muangthong2">
               <iframe class="rounded shadow iframe-responsive"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.8129165636374!2d100.55231831483225!3d13.910127990245183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU0JzM2LjUiTiAxMDDCsDMzJzE2LjIiRQ!5e0!3m2!1sen!2sth!4v1618027137281!5m2!1sen!2sth"
+                src="<?php echo $contactList[0]->google_map_2; ?>"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </div>
 
             <div class="tab-pane fade" id="pruakdang">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.876077886365!2d101.20976531482212!3d12.979776990850498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzQ3LjIiTiAxMDHCsDEyJzQzLjAiRQ!5e0!3m2!1sen!2sth!4v1618027050248!5m2!1sen!2sth"
+                src="<?php echo $contactList[0]->google_map_3; ?>"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="tab-pane fade" id="sapansie"><iframe class="rounded shadow iframe-responsive"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4457794199407!2d101.12497931482237!3d13.007259990832475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAwJzI2LjEiTiAxMDHCsDA3JzM3LjgiRQ!5e0!3m2!1sen!2sth!4v1618027279068!5m2!1sen!2sth"
+                src="<?php echo $contactList[0]->google_map_4; ?>"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
             <div class="tab-pane fade" id="kruesahapat">
               <iframe class="rounded shadow iframe-responsive"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.9655184059366!2d100.9576263148233!3d13.101370990770805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA2JzA0LjkiTiAxMDDCsDU3JzM1LjMiRQ!5e0!3m2!1sen!2sth!4v1618027317653!5m2!1sen!2sth"
+                src="<?php echo $contactList[0]->google_map_5; ?>"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
@@ -180,7 +184,27 @@
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script><script type="text/javascript">
+    function sendEmail() {
+        var data = {
+            name: $("#fullname").val(),
+            lineId: $("#lineID").val(),
+            phone: $("#phone").val(),
+            subject: $("#subject").val(),
+            message: $("#message").val()
+        };
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: data,
+            success: function(result){
+                // $('.success').fadeIn(1000);
+                alert('ส่งข้อความเรียบร้อย');
+                $('#contact-form')[0].reset();
+            }
+        });
+    }
+  </script>
 
 </body>
 
