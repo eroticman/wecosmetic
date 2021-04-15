@@ -94,7 +94,7 @@
                   </td>
                   <td>
                     <div class="product-img-container py-2">
-                      <img name="product-img" class="img-thumbnail">
+                      <img name="product-img">
                     </div>
                   </td>
                 </tr>
@@ -128,6 +128,7 @@
           </div>
         </div>
         
+        <?php if(!empty($productReviewList)): ?>
         <div class="col-12 mt-md-5 mt-3">
           <div class="sub-header">
             <h4 class="mb-0">รัวิวจากลูกค้า</h4>
@@ -142,6 +143,8 @@
           <?php endforeach ?>
           </div>
         </div>
+        <?php endif ?>
+        
       </div>
     </div>
   </section>
