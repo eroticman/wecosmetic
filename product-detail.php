@@ -3,7 +3,7 @@
 	$productDetail = product_detail($_GET['id']);
 	$productImgList  = product_img_list($_GET['id']);
 	$productReviewList  = product_review_list($_GET['id']);
-  $productRelated = product_related();
+  $productRelated = product_related($_GET['id']);
 ?>
 <!DOCTYPE html>
 <html>

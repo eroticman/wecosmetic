@@ -144,11 +144,11 @@ function product_review_list()
 	return $result;
 }
 
-function product_related()
+function product_related($id)
 {
 	$sql = "SELECT *
 			FROM db_product
-			WHERE is_active = '1'
+			WHERE is_active = '1' AND id NOT IN ($id)
 			ORDER BY RAND()
 			LIMIT 4";
 
