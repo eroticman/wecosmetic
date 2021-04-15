@@ -12,9 +12,9 @@ $config['database']	= array(
 	),
 	'host'	=> array(
 		'host'			=> 'localhost',
-		'database_name'	=> '',
-		'username'		=> '',
-		'password'		=> ''
+		'database_name'	=> 'wecosmet_db',
+		'username'		=> 'wecosmet_db',
+		'password'		=> 'IQ7xCEvRQf'
 	),
 	'demo'	=> array(
 		'host'			=> 'localhost',
