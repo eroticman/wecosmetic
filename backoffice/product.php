@@ -111,6 +111,10 @@
 			                    							<div class="th-inner ">รูปภาพ</div>
 			                    							<div class="fht-cell"></div>
 			                    						</th>
+														<th style="" data-field="price">
+			                    							<div class="th-inner ">สินค้า</div>
+			                    							<div class="fht-cell"></div>
+			                    						</th>
 			                    						<th style="" data-field="status">
 			                    							<div class="th-inner text-center">สถานะสินค้า</div>
 			                    							<div class="fht-cell"></div>
@@ -134,7 +138,12 @@
 			                  						<tr> 
 			                  							<td class=""><?php echo $i+1; ?></td> 
 			                  							<td style=""><?php echo $product_detail->product_name; ?></td>
-			                  							<td style=><img src="../img/product/cover/<?php echo $product_detail->id; ?>/<?php echo $product_detail->img_cover; ?>" style="width:200px;"></td>
+			                  							<td style="">
+														  	<?php if(!empty($product_detail->img_cover)): ?>
+														  		<img src="../img/product/cover/<?php echo $product_detail->id; ?>/<?php echo $product_detail->img_cover; ?>" style="width:200px;">
+															<?php endif ?>
+														</td>
+														<td style=""><?php echo $product_detail->price; ?></td>
 														<td class="td-stock text-center">
 															<form method="POST">
 																<input type="hidden" name="p_best"
