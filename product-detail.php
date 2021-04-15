@@ -24,7 +24,7 @@
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="icon" type="image/png" href="images/logo.png" />
 
-	<base href="https://www.we-cosmetic.com/products">
+	<base href="https://we-cosmetic.com/products">
 
   <title><?php echo $productDetail->product_name; ?> | We-Cosmetic</title>
 
