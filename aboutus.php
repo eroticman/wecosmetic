@@ -88,35 +88,6 @@
   </section>
   <!-- end about section -->
 
-
-  <!-- pdf section -->
-  <section class="pdf-section layout_padding2-bottom">
-    <div class="container">
-      <div class="sub-header">
-        <h3 class="mb-0">เกี่ยวกับผลิตภัณฑ์ของเรา</h3>
-      </div>
-      <ul class="list-group">
-        <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block text-left" onclick="location.href='pdf/SODA KERATIN TREATMENT.pdf'" alt="SODA KERATIN TREATMENT">
-            <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SODA KERATIN
-              TREATMENT</h5>
-          </button>
-        </li>
-        <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block text-left" onclick="location.href='pdf/SO-YONG WHITE SERUM.pdf'" alt="SO-YONG WHITE SERUM">
-            <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SO-YONG WHITE SERUM</h5>
-          </button>
-        </li>
-        <li class="list-group-item border-gold">
-          <button class="btn btn-link d-block text-left" onclick="location.href='pdf/SWAN HAIR SILKY SEAWEED NUTRIENTS.pdf'" alt="SWAN HAIR SILKY SEAWEED NUTRIENTS">
-            <h5 class="color-gold mb-0"><i class="fas fa-file-pdf"></i> : SWAN HAIR SILKY SEAWEED NUTRIENTS</h5>
-          </button>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- end pdf section -->
-
   <?php include 'footer.php' ?>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
