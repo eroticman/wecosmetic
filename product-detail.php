@@ -24,7 +24,7 @@
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="icon" type="image/png" href="images/logo.png" />
 
-	<!-- <base href="https://"> -->
+	<base href="https://www.we-cosmetic.com/products">
 
   <title><?php echo $productDetail->product_name; ?> | We-Cosmetic</title>
 
@@ -157,8 +157,8 @@
       <div class="row">
       <?php foreach ($productRelated as $relatedDetail) : ?>
         <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail?id=<?php echo $relatedDetail->id; ?>">
-          <!-- <a href="products/<?php echo $relatedDetail->id; ?>/<?php echo $relatedDetail->url_name; ?>" -->
+          <!-- <a href="product-detail?id=<?php echo $relatedDetail->id; ?>"> -->
+          <a href="products/<?php echo $relatedDetail->id; ?>/<?php echo $relatedDetail->url_name; ?>">
             <div class="card-product">
               <div class="square">
                 <img src="img/product/cover/<?php echo $relatedDetail->id; ?>/<?php echo $relatedDetail->img_cover; ?>" alt="<?php echo $relatedDetail->product_name; ?>" class="img-fluid" />

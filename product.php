@@ -68,8 +68,8 @@
       <div class="row">
       <?php foreach ($productList as $productDetail) : ?>
         <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail?id=<?php echo $productDetail->id; ?>">
-          <!-- <a href="products/<?php echo $productDetail->id; ?>/<?php echo $productDetail->url_name; ?>" -->
+          <!-- <a href="product-detail?id=<?php echo $productDetail->id; ?>"> -->
+          <a href="products/<?php echo $productDetail->id; ?>/<?php echo $productDetail->url_name; ?>">
             <div class="card-product">
               <div class="square">
                 <img src="img/product/cover/<?php echo $productDetail->id; ?>/<?php echo $productDetail->img_cover; ?>" alt="<?php echo $productDetail->product_name; ?>" class="img-fluid" />

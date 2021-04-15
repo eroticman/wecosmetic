@@ -111,7 +111,7 @@
       <?php foreach ($bestSellerProduct as $bestSeller) : ?>
         <div class="col-lg-4 col-md-6 mb-3">
           <a href="product-detail?id=<?php echo $bestSeller->id; ?>">
-          <!-- <a href="products/<?php echo $bestSeller->id; ?>/<?php echo $bestSeller->url_name; ?>" -->
+          <a href="products/<?php echo $bestSeller->id; ?>/<?php echo $bestSeller->url_name; ?>">
             <div class="card-product">
               <div class="square">
                 <img src="img/product/cover/<?php echo $bestSeller->id; ?>/<?php echo $bestSeller->img_cover; ?>" alt="<?php echo $bestSeller->product_name; ?>" class="img-fluid" />

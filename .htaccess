@@ -4,3 +4,6 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteEngine On
+RewriteRule ^products/(.*)/(.*)$ product-detail.php?id=$1&url_name=$2
