@@ -42,25 +42,48 @@
 
 <body class="overflow-x">
   <div class="hero_area">
-    <?php include 'header.php' ?>
+    <?php 
+        include 'header.php';
+        include 'config/init.php';
+        $bannerList = banner_list();
+        $bestSellerProduct = best_index();
+    ?>
     <!-- slider section -->
     <section class="">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators mb-md-auto mb-0">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <?php 
+          $i = 0;
+          foreach ($bannerList as $bannerDetail) :
+        ?>
+          <?php if ($i == 0) : ?>
+            <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $i; ?>" class="active"></li>
+          <?php else : ?>
+            <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $i; ?>"></li>
+          <?php endif ?>
+        <?php 
+          $i++;
+          endforeach 
+        ?>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/banner.jpg" class="d-block w-100" alt="banner">
-          </div>
-          <div class="carousel-item">
-            <img src="images/banner.jpg" class="d-block w-100" alt="banner">
-          </div>
-          <div class="carousel-item">
-            <img src="images/banner.jpg" class="d-block w-100" alt="banner">
-          </div>
+        <?php 
+          $i = 0;
+          foreach ($bannerList as $bannerDetail) :
+        ?>
+          <?php if ($i == 0) : ?>
+              <div class="carousel-item active">
+                <img src="img/banner/<?php echo $bannerDetail->id; ?>/<?php echo $bannerDetail->img_cover; ?>" class="d-block w-100" alt="<?php echo $bannerDetail->banner_name; ?>">
+              </div>
+          <?php else : ?>
+              <div class="carousel-item">
+                <img src="img/banner/<?php echo $bannerDetail->id; ?>/<?php echo $bannerDetail->img_cover; ?>" class="d-block w-100" alt="<?php echo $bannerDetail->banner_name; ?>">
+              </div>
+          <?php endif ?>
+        <?php 
+          $i++;
+          endforeach 
+        ?>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -85,124 +108,26 @@
         <h4>BEST SELLER</h4>
       </div>
       <div class="row">
+      <?php foreach ($bestSellerProduct as $bestSeller) : ?>
         <div class="col-lg-4 col-md-6 mb-3">
-          <a href="product-detail">
+          <a href="product-detail?id=<?php echo $bestSeller->id; ?>">
             <div class="card-product">
               <div class="square">
-                <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
+                <img src="img/product/cover/<?php echo $bestSeller->id; ?>/<?php echo $bestSeller->img_cover; ?>" alt="<?php echo $bestSeller->product_name; ?>" class="img-fluid" />
                 <div class="overlay">
                   <div class="text h5">รายละเอียด</div>
                 </div>
               </div>
               <div class="content">
-                <h3>PRODUCT NAME</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
+                <h3><?php echo $bestSeller->product_name; ?></h3>
+                <p><?php echo $bestSeller->short_desc; ?></p>
+                <h6><?php echo $bestSeller->product_type; ?></h6>
+                <h6 class="color-gold font-weight-bold"><?php echo number_format($bestSeller->price); ?> บาท</h6>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h3>PRODUCT NAME</h3>
-                <p>Lorem Ipsum is simply dummy text of the. </p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h3>PRODUCT NAME</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h3>PRODUCT NAME</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h3>PRODUCT NAME</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h3>PRODUCT NAME</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
+      <?php endforeach ?>
       </div>
     </div>
   </section>

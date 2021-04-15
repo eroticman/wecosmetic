@@ -1,3 +1,10 @@
+<?php 
+	include 'config/init.php';
+	$productDetail = product_detail($_GET['id']);
+	$productImgList  = product_img_list($_GET['id']);
+	$productReviewList  = product_review_list($_GET['id']);
+  $productRelated = product_related();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -9,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
   <meta name="keywords"
-    content="เซรั่มกระชับรูขุมขน, เซรั่มณัชชา, เซรั่มลดฝ้ากระ, รีวิวเซรั่มหน้าใส, ครีมรักษาฝ้า, วิธีรักษาฝ้า, เซรั่มQ, เซรั่มโซยอง, ครีมบำรุงกลางคืน, เซรั่มที่ดีที่สุด" />
+    content="<?php echo $productDetail->key_word; ?>" />
   <meta name="description"
     content="we-cosmetic จำหน่ายสกินแคร์ คุณภาพดี ราคาถูก ให้คำปรึกษาฟรี มีผลิตภัณฑ์ให้เลือกมากมาย เช่น เซรั่มโซยอง เซรั่มณัชชา ครีมรักษาฝ้า" />
   <meta name="author" content="We Cosmetic" />
@@ -17,7 +24,7 @@
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="icon" type="image/png" href="images/logo.png" />
 
-  <title>รายละเอียดสินค้า | We-Cosmetic</title>
+  <title><?php echo $productDetail->product_name; ?> | We-Cosmetic</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -53,7 +60,7 @@
       <div class="container position-relative">
         <div class="text-box shadow">
           <h1>รายละเอียดสินค้า</h1>
-          <h4>PRODUCT DETAIL</h4>
+          <h4><?php echo $productDetail->product_name; ?></h4>
         </div>
       </div>
       <img src="images/header2.jpg" alt="store" class="img-fluid w-100" />
@@ -74,32 +81,13 @@
                   <td>
                     <div class="thumbnail-gallery">
                       <div class="thumbnail-container">
-                        <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
+                        <img src="img/product/cover/<?php echo $productDetail->id; ?>/<?php echo $productDetail->img_cover; ?>" alt="<?php echo $productDetail->product_name; ?>" class="img-fluid" />
                       </div>
+                    <?php foreach ($productImgList as $productImgDetail) : ?>
                       <div class="thumbnail-container">
-                        <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
+                        <img src="img/product/<?php echo $productImgDetail->product_id; ?>/<?php echo $productImgDetail->img_name; ?>" alt="<?php echo $productDetail->product_name; ?>" class="img-fluid" />
                       </div>
-                      <div class="thumbnail-container">
-                        <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
-                      </div>
-                      <div class="thumbnail-container">
-                        <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
-                      </div>
-                      <div class="thumbnail-container">
-                        <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
-                      </div>
-                      <div class="thumbnail-container">
-                        <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
-                      </div>
-                      <div class="thumbnail-container">
-                        <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
-                      </div>
-                      <div class="thumbnail-container">
-                        <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
-                      </div>
-                      <div class="thumbnail-container">
-                        <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
-                      </div>
+                    <?php endforeach ?>
                     </div>
                   </td>
                   <td>
@@ -124,21 +112,12 @@
         </div>
         <div class="col-lg-6 mb-3">
           <div class="product-detail">
-            <h4 class="color-gold">PRODUCT NAME</h4>
-            <h5>ANTI-ACNE SOLUTION</h5>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              <br>Lorem Ipsum is simply dummytext of the printing and typesetting industry.
-              <br>Lorem Ipsum is simply dummy text of the printing andtypesetting industry.
-              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
+            <h4 class="color-gold"><?php echo $productDetail->product_name; ?></h4>
+            <h5><?php echo $productDetail->product_type; ?></h5>
+              <?php echo $productDetail->description; ?>
             <div class="btn-group border d-flex">
               <button type="button" class="btn btn-light disabled">
-                <h5 class="mb-0 text-dark">ราคา <span class="text-danger">189</span> บาท</h5>
+                <h5 class="mb-0 text-dark">ราคา <span class="text-danger"><?php echo number_format($productDetail->price); ?></span> บาท</h5>
               </button>
               <button type="button" onclick="window.open('https://lin.ee/t7ZOBek')" class="btn btn-gold"><i
                   class="fas fa-shopping-basket"></i> :
@@ -191,84 +170,26 @@
         <h4 class="mb-0">สินค้าอื่นๆ</h4>
       </div>
       <div class="row">
+      <?php foreach ($productRelated as $relatedDetail) : ?>
         <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
+          <a href="product-detail?id=<?php echo $relatedDetail->id; ?>">
             <div class="card-product">
               <div class="square">
-                <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
+                <img src="img/product/cover/<?php echo $relatedDetail->id; ?>/<?php echo $relatedDetail->img_cover; ?>" alt="<?php echo $relatedDetail->product_name; ?>" class="img-fluid" />
                 <div class="overlay">
                   <div class="text h5">รายละเอียด</div>
                 </div>
               </div>
               <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the. </p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
+                <h4><?php echo $relatedDetail->product_name; ?></h4>
+                <p><?php echo $relatedDetail->short_desc; ?></p>
+                <h6><?php echo $relatedDetail->product_type; ?></h6>
+                <h6 class="color-gold font-weight-bold"><?php echo number_format($relatedDetail->price); ?> บาท</h6>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
+      <?php endforeach ?>
       </div>
     </div>
   </section>

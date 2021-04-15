@@ -42,7 +42,11 @@
 
 <body class="overflow-x">
   <div class="hero_area">
-    <?php include 'header.php' ?>
+    <?php 
+      include 'header.php';
+      include 'config/init.php';
+      $productList = product_list(); 
+    ?>
   </div>
 
   <!-- header section -->
@@ -62,179 +66,77 @@
   <section class="product_section layout_padding2">
     <div class="container">
       <div class="row">
+      <?php foreach ($productList as $productDetail) : ?>
         <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
+          <a href="product-detail?id=<?php echo $productDetail->id; ?>">
             <div class="card-product">
               <div class="square">
-                <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
+                <img src="img/product/cover/<?php echo $productDetail->id; ?>/<?php echo $productDetail->img_cover; ?>" alt="<?php echo $productDetail->product_name; ?>" class="img-fluid" />
                 <div class="overlay">
                   <div class="text h5">รายละเอียด</div>
                 </div>
               </div>
               <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
+                <h4><?php echo $productDetail->product_name; ?></h4>
+                <p><?php echo $productDetail->short_desc; ?></p>
+                <h6><?php echo $productDetail->product_type; ?></h6>
+                <h6 class="color-gold font-weight-bold"><?php echo number_format($productDetail->price); ?> บาท</h6>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the. </p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/AMO52306.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-3">
-          <a href="product-detail">
-            <div class="card-product">
-              <div class="square">
-                <img src="images/product/DSCF8688-Edit.jpg" alt="product" class="img-fluid" />
-                <div class="overlay">
-                  <div class="text h5">รายละเอียด</div>
-                </div>
-              </div>
-              <div class="content">
-                <h4>PRODUCT NAME</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply
-                  dummy
-                  text of the printing and typesetting industry.</p>
-                <h6>ANTI-ACNE SOLUTION</h6>
-                <h6 class="color-gold font-weight-bold">189 บาท</h6>
-              </div>
-            </div>
-          </a>
-        </div>
+      <?php endforeach ?>
       </div>
+
+      <?php 
+        $total = product_count();
+
+        $pagination = pagination( $total->counter, 8);
+      ?>  
       <div class="row layout_padding2-top">
         <nav class="mx-auto">
           <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i></a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a></li>
+          <?php if ( $pagination['total'] > 0 ) : ?>
+              <?php if ( $pagination['prev'] ) : ?>
+                <li class="page-item">
+                  <a class="page-link" href="product?page=<?php echo $pagination['prev']; ?>">
+                    <i class="fas fa-chevron-left"></i>
+                  </a>
+                </li>
+              <?php endif; ?>
+              <?php for ( $i = 1; $i <= $pagination['total']; $i++ ) : ?>
+                <?php 
+                  $page1 = $pagination['page'] - 2;
+                  $page2 = $pagination['page'] + 2;
+
+                  if ( ( $i == 1 ) or ( $i == $pagination['total'] ) or ( $i >= $page1 and $i <= $page2 ) ) :
+                ?>
+                    <li class="page-item <?php echo ($i == $pagination['page']) ? 'active' : ''; ?>">
+                      <a class="page-link" href="product?page=<?php echo $i; ?>" >
+                        <?php echo $i; ?>
+                      </a>
+                    </li>
+                <?php elseif ( ( ( $i > 1 ) and ( $i == ( $page1 - 1 ) ) ) or ( ( $i < $pagination['total'] ) and ( $i == ( $page2 + 1 ) ) ) ) : ?>
+                    <li class="page-item">
+                      <a href="#" class="page-link">
+                        ...
+                      </a>
+                    </li>
+                <?php endif ?>
+              <?php endfor ?>
+              <?php if ( $pagination['total'] != $pagination['page'] ) : ?>
+                <li class="page-item">
+                  <a class="page-link" href="products?page=<?php echo $pagination['next']; ?>">
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+              <?php endif ?>
+          <?php endif ?>
           </ul>
         </nav>
       </div>
     </div>
   </section>
-
 
 
   <?php include 'footer.php' ?>

@@ -520,7 +520,7 @@ function contact_us_edit()
 	$contact_id 	= $_POST['contact_id'];
 
 		$sql = "UPDATE db_contact
-				SET contact_name = '{$_POST['name']}', 
+				SET
 				phone_1 = '{$_POST['phone_1']}', 
 				phone_2 = '{$_POST['phone_2']}',
 				phone_3 = '{$_POST['phone_3']}',
