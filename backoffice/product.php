@@ -143,7 +143,7 @@
 														  		<img src="../img/product/cover/<?php echo $product_detail->id; ?>/<?php echo $product_detail->img_cover; ?>" style="width:200px;">
 															<?php endif ?>
 														</td>
-														<td style=""><?php echo $product_detail->price; ?></td>
+														<td class="text-center"><?php echo $product_detail->price; ?></td>
 														<td class="td-stock text-center">
 															<form method="POST">
 																<input type="hidden" name="p_best"
