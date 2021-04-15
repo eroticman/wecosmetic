@@ -112,7 +112,7 @@
 			                    							<div class="fht-cell"></div>
 			                    						</th>
 														<th style="" data-field="price">
-			                    							<div class="th-inner ">สินค้า</div>
+			                    							<div class="th-inner ">ราคา</div>
 			                    							<div class="fht-cell"></div>
 			                    						</th>
 			                    						<th style="" data-field="status">
