@@ -24,6 +24,8 @@
   <link rel="icon" type="image/png" href="images/logo.png" />
   <link rel="icon" type="image/png" href="images/logo.png" />
 
+	<!-- <base href="https://"> -->
+
   <title><?php echo $productDetail->product_name; ?> | We-Cosmetic</title>
 
   <!-- slider stylesheet -->
@@ -131,31 +133,13 @@
             <h4 class="mb-0">รัวิวจากลูกค้า</h4>
           </div>
           <div class="owl-carousel">
+          <?php foreach ($productReviewList as $reviewDetail) : ?>
             <div class="item">
               <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
+                <img src="img/review/<?php echo $reviewDetail->product_id; ?>/<?php echo $reviewDetail->img_name; ?>" alt="<?php echo $productDetail->product_name; ?>" class="img-thumbnail" />
               </div>
             </div>
-            <div class="item">
-              <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
-              </div>
-            </div>
-            <div class="item">
-              <div class="square">
-                <img src="images/product/SWAN_1.jpg" alt="product" class="img-thumbnail" />
-              </div>
-            </div>
+          <?php endforeach ?>
           </div>
         </div>
       </div>
@@ -174,6 +158,7 @@
       <?php foreach ($productRelated as $relatedDetail) : ?>
         <div class="col-lg-3 col-md-6 mb-3">
           <a href="product-detail?id=<?php echo $relatedDetail->id; ?>">
+          <!-- <a href="products/<?php echo $relatedDetail->id; ?>/<?php echo $relatedDetail->url_name; ?>" -->
             <div class="card-product">
               <div class="square">
                 <img src="img/product/cover/<?php echo $relatedDetail->id; ?>/<?php echo $relatedDetail->img_cover; ?>" alt="<?php echo $relatedDetail->product_name; ?>" class="img-fluid" />
