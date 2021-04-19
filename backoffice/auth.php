@@ -1,7 +1,7 @@
-<?php 
-if(!check_login())
-{
-	header('location: logout.php');
-	exit;
-}
+<?php 
+if(!check_login())
+{
+	header('location: logout.php');
+	exit;
+}
 ?>
