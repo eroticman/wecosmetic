@@ -283,7 +283,7 @@
 
 
 
-  <section class="bg-cream w-100">
+  <section class="bg-cream w-100 overflow-x-hidden">
 
     <div class="row">
 
