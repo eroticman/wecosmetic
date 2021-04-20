@@ -150,7 +150,8 @@
               class="d-sm-block d-none w-100" alt="<?php echo $bannerDetail->banner_name; ?>">
 
             <!-- Mobile -->
-            <img src="images/banner.jpg" class="d-sm-none d-block w-100" alt="">
+            <img src="img/banner/<?php echo $bannerDetail->id; ?>/<?php echo $bannerDetail->img_cover_mb; ?>"
+              class="d-sm-none d-block w-100" alt="<?php echo $bannerDetail->banner_name; ?>">
 
           </div>
 
@@ -162,7 +163,8 @@
               class="d-sm-block d-none w-100" alt="<?php echo $bannerDetail->banner_name; ?>">
 
             <!-- Mobile -->
-            <img src="images/banner.jpg" class="d-sm-none d-block w-100" alt="">
+            <img src="img/banner/<?php echo $bannerDetail->id; ?>/<?php echo $bannerDetail->img_cover_mb; ?>"
+              class="d-sm-none d-block w-100" alt="<?php echo $bannerDetail->banner_name; ?>">
 
           </div>
 
