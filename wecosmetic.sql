@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Apr 19, 2021 at 04:49 AM
--- Server version: 10.1.26-MariaDB
--- PHP Version: 7.2.34
+-- Host: 127.0.0.1
+-- Generation Time: Apr 20, 2021 at 06:10 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.3.22
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wecosmet_db`
+-- Database: `wecosmetic`
 --
 
 -- --------------------------------------------------------
@@ -35,7 +34,7 @@ CREATE TABLE `db_admin` (
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL,
   `ip` varchar(20) DEFAULT NULL,
-  `is_active` int(2) DEFAULT '1',
+  `is_active` int(2) DEFAULT 1,
   `created` datetime DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -56,6 +55,7 @@ CREATE TABLE `db_banner` (
   `id` int(20) NOT NULL,
   `banner_name` varchar(100) DEFAULT '',
   `img_cover` varchar(100) DEFAULT '',
+  `img_cover_mb` longtext DEFAULT NULL,
   `is_active` varchar(1) DEFAULT '1',
   `created` datetime DEFAULT NULL,
   `updated` datetime DEFAULT NULL
@@ -65,9 +65,9 @@ CREATE TABLE `db_banner` (
 -- Dumping data for table `db_banner`
 --
 
-INSERT INTO `db_banner` (`id`, `banner_name`, `img_cover`, `is_active`, `created`, `updated`) VALUES
-(1, 'We Cosmetic Banner_SWAN', 'WeCosmetics_Banner2_2.jpg', '1', '2021-04-11 13:24:18', '2021-04-17 19:57:40'),
-(2, 'We Cosmetic Banner_SOYONG', 'WeCosmetics_Banner1_2.jpg', '1', '2021-04-13 13:00:33', '2021-04-17 19:58:06');
+INSERT INTO `db_banner` (`id`, `banner_name`, `img_cover`, `img_cover_mb`, `is_active`, `created`, `updated`) VALUES
+(1, 'We Cosmetic Banner_SWAN', 'WeCosmetics_Banner2_2.jpg', '1618891708swan_7_.jpg', '1', '2021-04-11 13:24:18', '2021-04-20 11:08:28'),
+(2, 'We Cosmetic Banner_SOYONG', 'WeCosmetics_Banner1_2.jpg', '1618891728soyong_5_.jpg', '1', '2021-04-13 13:00:33', '2021-04-20 11:08:48');
 
 -- --------------------------------------------------------
 
@@ -78,17 +78,17 @@ INSERT INTO `db_banner` (`id`, `banner_name`, `img_cover`, `is_active`, `created
 CREATE TABLE `db_contact` (
   `id` int(10) NOT NULL,
   `contact_name` varchar(100) DEFAULT NULL,
-  `phone_1` text,
-  `phone_2` text,
-  `phone_3` text,
-  `phone_4` text,
-  `phone_5` text,
-  `google_map_1` text,
+  `phone_1` text DEFAULT NULL,
+  `phone_2` text DEFAULT NULL,
+  `phone_3` text DEFAULT NULL,
+  `phone_4` text DEFAULT NULL,
+  `phone_5` text DEFAULT NULL,
+  `google_map_1` text DEFAULT NULL,
   `google_map_2` text NOT NULL,
-  `google_map_3` text,
-  `google_map_4` text,
-  `google_map_5` text,
-  `is_active` int(2) DEFAULT '1',
+  `google_map_3` text DEFAULT NULL,
+  `google_map_4` text DEFAULT NULL,
+  `google_map_5` text DEFAULT NULL,
+  `is_active` int(2) DEFAULT 1,
   `created` datetime DEFAULT NULL,
   `updated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -109,15 +109,15 @@ INSERT INTO `db_contact` (`id`, `contact_name`, `phone_1`, `phone_2`, `phone_3`,
 CREATE TABLE `db_product` (
   `id` int(20) NOT NULL,
   `url_name` varchar(100) DEFAULT NULL,
-  `keyword` text,
+  `keyword` text DEFAULT NULL,
   `product_name` varchar(100) DEFAULT '',
   `price` decimal(10,0) DEFAULT NULL,
-  `short_desc` text,
-  `description` text,
+  `short_desc` text DEFAULT NULL,
+  `description` text DEFAULT NULL,
   `product_type` varchar(100) DEFAULT '',
   `img_cover` varchar(150) DEFAULT NULL,
-  `is_best` int(2) DEFAULT '0',
-  `is_active` int(2) DEFAULT '1',
+  `is_best` int(2) DEFAULT 0,
+  `is_active` int(2) DEFAULT 1,
   `created` datetime DEFAULT NULL,
   `updated` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
